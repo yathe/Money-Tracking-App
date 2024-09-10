@@ -1,0 +1,203 @@
+/* body{
+    background-color: aquamarine;
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+}
+h1,h2{
+    text-align: center;
+}
+.input-section{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    align-items: center;
+    padding: 10px;
+}
+.input-section label{
+    font-weight: bold;
+    margin-right: 10px;
+}
+.input-section input{
+    padding: 5px;
+    margin-right: 10px;
+}
+.input-section button{
+    padding: 5px 10px;
+    background-color: rgb(252, 10, 199);
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+.expenses-list{
+    margin:20px;
+}
+table{
+    width:100%;
+    border-collapse: collapse;
+}
+th,td{
+    border:1px solid #ddd;
+    padding: 8px;
+    text-align: left;
+}
+th{
+    background-color: yellowgreen;
+    color: tomato;
+}
+tfoot td{
+    font-weight: bold;
+}
+.delete-btn{
+    padding:5px 10px;
+    background-color: tomato;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+} */
+/* Body Styles */
+body {
+    background-color: #f0f4f8; /* Soft light blue for a calming background */
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Headings */
+h1, h2 {
+    text-align: center;
+    color: #2f4858; /* Dark desaturated blue for contrast */
+    margin: 20px 0;
+}
+
+/* Form Section */
+.input-section {
+    display: flex;
+    flex-wrap: wrap; /* Allows elements to wrap if needed */
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px;
+    background-color: #ffffff; /* Clean white background */
+    border-radius: 8px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+    max-width: 900px;
+    margin: 20px auto;
+    gap: 15px; /* Space between form elements */
+}
+
+.input-section label {
+    font-weight: bold;
+    margin-right: 10px;
+    color: #2f4858; /* Same dark blue as the headings */
+}
+
+.input-section input, 
+.input-section select {
+    padding: 10px;
+    flex: 1; /* Makes inputs take up equal space */
+    min-width: 150px; /* Ensures inputs don't shrink too much */
+    border: 1px solid #b0bec5; /* Light gray border */
+    border-radius: 4px;
+    font-size: 16px;
+    color: #2f4858;
+}
+
+.input-section button {
+    padding: 10px 15px;
+    background-color: #ff6f61; /* Vibrant coral color */
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    flex-shrink: 0; /* Prevents the button from shrinking */
+}
+
+.input-section button:hover {
+    background-color: #e65c53; /* Slightly darker coral on hover */
+}
+
+/* Expenses List Section */
+.expenses-list {
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    max-width: 900px;
+}
+
+/* Table Styling */
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+th, td {
+    border: 1px solid #e0e0e0; /* Light border for a clean look */
+    padding: 12px;
+    text-align: left;
+}
+
+th {
+    background-color: #4caf50; /* Fresh green */
+    color: white; /* White text for readability */
+    font-size: 18px;
+    text-transform: uppercase;
+}
+
+td {
+    color: #2f4858; /* Dark blue text for body */
+}
+
+tfoot td {
+    font-weight: bold;
+    background-color: #f1f8e9; /* Light green for total row */
+    padding: 10px;
+}
+
+/* Delete Button Styling */
+.delete-btn {
+    padding: 5px 10px;
+    background-color: #f44336; /* Vivid red for delete */
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.delete-btn:hover {
+    background-color: #d32f2f; /* Darker red on hover */
+}
+
+/* Table Hover Effect */
+table tr:hover {
+    background-color: #fafafa; /* Light gray hover effect */
+}
+
+/* Responsive Design */
+@media screen and (max-width: 768px) {
+    .input-section {
+        flex-direction: column; /* Stacks elements on smaller screens */
+        align-items: flex-start;
+    }
+
+    .input-section input, 
+    .input-section select, 
+    .input-section button {
+        width: 92%;
+        margin-bottom: 10px;
+    }
+
+    table th, table td {
+        font-size: 14px;
+        padding: 10px;
+    }
+
+    .expenses-list {
+        padding: 15px;
+    }
+}
